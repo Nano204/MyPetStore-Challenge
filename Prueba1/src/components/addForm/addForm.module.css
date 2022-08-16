@@ -1,0 +1,14 @@
+.addForm {
+  background-color: white;
+  width: 600px;
+  max-width: 90vw;
+  min-width: 300px;
+  border: 1px lightgray solid;
+  border-radius: 0.5rem;
+  padding: 15px;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+}
