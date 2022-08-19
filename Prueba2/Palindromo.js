@@ -20,7 +20,6 @@ const hallarPalindromos = (textoOriginal) => {
         palindromos.push(element);
     }
   }
-
   //Devuelvo el array
   return palindromos;
 };
