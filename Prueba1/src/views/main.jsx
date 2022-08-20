@@ -11,13 +11,17 @@ export default function Main() {
   const [petArray, setPetArray] = useState([]);
 
   const updatePets = () => {
+    console.log("Something");
     fetch(`${HOST}/${APIKEY}/pets`)
       .then((response) => response.json())
-      .then((response) => setPetArray(response));
+      .then((response) =>
+        response.length ? setPetArray(response) : setPetArray(null)
+      );
   };
 
   useEffect(() => {
-    if (!petArray.length) {
+    console.log(petArray);
+    if (!petArray || !petArray.length) {
       updatePets();
     }
   }, [petArray]);
